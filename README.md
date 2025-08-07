@@ -172,13 +172,20 @@ git clone https://github.com/IDEA-Research/GroundingDINO.git
 cd GroundingDINO/
 ```
 
-3. Install the required dependencies in the current directory.
+3. (Optional) Create and activate a new conda environment with PyTorch 2.8:
+
+```bash
+conda env create -f environment-linux.yaml
+conda activate groundingdino
+```
+
+4. Install the required dependencies in the current directory.
 
 ```bash
 pip install -e .
 ```
 
-4. Download pre-trained model weights.
+5. Download pre-trained model weights.
 
 ```bash
 mkdir weights
@@ -365,7 +372,6 @@ If you find our work helpful for your research, please consider citing the follo
   year={2023}
 }
 ```
-
 
 
 
