@@ -179,13 +179,7 @@ conda env create -f environment-linux.yaml
 conda activate groundingdino
 ```
 
-4. Install the required dependencies in the current directory.
-
-```bash
-pip install -e .
-```
-
-5. Download pre-trained model weights.
+4. Download pre-trained model weights.
 
 ```bash
 mkdir weights
@@ -372,6 +366,5 @@ If you find our work helpful for your research, please consider citing the follo
   year={2023}
 }
 ```
-
 
 

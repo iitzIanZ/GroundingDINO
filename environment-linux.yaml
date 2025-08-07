@@ -1,15 +1,14 @@
 name: groundingdino
 channels:
   - defaults
-  - pytorch
-  - nvidia
-  - conda-forge
 dependencies:
   - python=3.10
-  - pytorch=2.0.1
-  - cudatoolkit=11.8
-  - torchvision=0.15.2
-  - torchaudio=2.0.2
   - pip
   - pip:
+      # PyTorch 2.8 with CUDA support via official wheels
+      - torch==2.8.0+cu121 -f https://download.pytorch.org/whl/torch_stable.html
+      - torchvision==0.23.0+cu121 -f https://download.pytorch.org/whl/torch_stable.html
+      - torchaudio==2.8.0
+      # install project and other Python requirements
+      - -e .
       - -r requirements.txt
